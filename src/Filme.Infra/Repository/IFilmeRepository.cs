@@ -9,8 +9,8 @@ namespace FilmesCrud.src.Filme.Infra.Repository
     public interface IFilmeRepository
     {
         Task<IEnumerable<FilmeResponse>> BuscaFilmeAsync();
-        Task<FilmeResponse> BuscaFilmeAsync(int id);
-        Task<bool> AdicionarAsync(FilmeRequest request, int id);
+        Task<FilmeResponse> BuscaFilmeAsyncId(int id);
+        Task<bool> AdicionarAsync(FilmeRequest request);
         Task<bool> AtualizarAsync(FilmeRequest request, int id);
         Task<bool> DeletarAsync(int id);
 

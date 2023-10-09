@@ -4,6 +4,6 @@ namespace FilmesCrud.Models
     {
         public string  Nome { get; set; }
         public int Ano { get; set; }
-        public string ProdutoraId { get; set; }
+        public int ProdutoraId { get; set; }
     }
 }
